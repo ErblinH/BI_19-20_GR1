@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<canvas>
+		
+	</canvas>
+
+	<script type="text/javascript">
+		var canvas = document.querySelector("canvas");
+
+		canvas.width = window.innerWidth;
+		canvas.height = window.innerHeight;
+		
+		var c = canvas.getContext("2d");
+
+		c.lineWidth = "25";
+
+		c.beginPath();
+		//c.arc(300,150,100,0,Math.PI*2, false)
+		c.stroke();
+
+		
+
+		var numberOfSides = 6,
+	    size = 20,
+	    Xcenter = 25,
+	    Ycenter = 25;
+
+		
+		c.moveTo (Xcenter +  size * Math.cos(0), Ycenter +  size *  Math.sin(0));          
+
+		var xcor = [];
+		var ycor = [];
+		for (var i = 1; i <= numberOfSides;i += 1) {
+		  xcor[i] = (Xcenter + size * Math.cos(i * 2 * Math.PI / numberOfSides))*12;
+		  ycor[i] =  (Ycenter + size * Math.sin(i * 2 * Math.PI / numberOfSides))*12
+		}
+
+	
+		///////////////////////////////////////
+		c.beginPath();
+		c.moveTo(xcor[3]+50,ycor[3]+50);
+		c.lineTo(xcor[6]+50,ycor[6]+50);
+		c.stroke();
+
+		c.beginPath();
+		c.moveTo(xcor[1]+50,ycor[1]+50);
+		c.lineTo(xcor[4]+50,ycor[4]+50);
+		c.stroke();
+
+		c.beginPath();
+		c.moveTo(xcor[2]+50,ycor[2]+50);
+		c.lineTo(xcor[5]+50,ycor[5]+50);
+		c.stroke();
+		/////////////////////////////////////// vija 1 (1 pastaj 2)
+		c.beginPath();
+		c.moveTo(276,217);
+		c.lineTo(176,199);
+		c.stroke();
+
+		c.beginPath();
+		c.moveTo(274,217);
+		c.lineTo(301,128);
+		c.stroke();	
+		///////////////////////////////////////
+		c.beginPath();
+		c.moveTo(317,288);
+		c.lineTo(217,270);
+		c.stroke();
+
+		c.beginPath();
+		c.moveTo(315,287);
+		c.lineTo(342,198);
+		c.stroke();	
+/*
+		///////////////////////////////////////
+
+ 		c.lineWidth = "5";
+
+		c.beginPath();
+
+		c.arc(350,350,240,0,Math.PI*2, false)
+		c.arc(350,350,160,0,Math.PI*2, false)
+		c.arc(350,350,80,0,Math.PI*2, false)
+
+		c.stroke();
+
+		c.beginPath();
+		c.arc(350,350,50,0,Math.PI*2, false)
+		c.fill()*/
+		///////////////////////////////////////
+		c.translate(350,350);
+
+
+		c.rotate(60*Math.PI/180);
+		/////////////////////////////////////// 
+		//vija 1 paraqe kendin larte
+		c.beginPath();
+		c.moveTo(276-350,217-350);
+		c.lineTo(176-350,199-350);
+		c.stroke();
+
+		c.beginPath();
+		c.moveTo(274-350,217-350);
+		c.lineTo(301-350,128-350);
+		c.stroke();	
+		///////////////////////////////////////
+		//vija 2 paraqet kendin poshte
+		c.beginPath();
+		c.moveTo(317-350,288-350);
+		c.lineTo(217-350,270-350);
+		c.stroke();
+
+		c.beginPath();
+		c.moveTo(315-350,287-350);
+		c.lineTo(342-350,198-350);
+		c.stroke();
+		//////////////////////////////////////
+
+		c.rotate(60*Math.PI/180);
+		/////////////////////////////////////// 
+		//vija 1 paraqe kendin larte
+		c.beginPath();
+		c.moveTo(276-350,217-350);
+		c.lineTo(176-350,199-350);
+		c.stroke();
+
+		c.beginPath();
+		c.moveTo(274-350,217-350);
+		c.lineTo(301-350,128-350);
+		c.stroke();	
+		///////////////////////////////////////
+		//vija 2 paraqet kendin poshte
+		c.beginPath();
+		c.moveTo(317-350,288-350);
+		c.lineTo(217-350,270-350);
+		c.stroke();
+
+		c.beginPath();
+		c.moveTo(315-350,287-350);
+		c.lineTo(342-350,198-350);
+		c.stroke();
+		//////////////////////////////////////
+
+		c.rotate(60*Math.PI/180);
+		/////////////////////////////////////// 
+		//vija 1 paraqe kendin larte
+		c.beginPath();
+		c.moveTo(276-350,217-350);
+		c.lineTo(176-350,199-350);
+		c.stroke();
+
+		c.beginPath();
+		c.moveTo(274-350,217-350);
+		c.lineTo(301-350,128-350);
+		c.stroke();	
+		///////////////////////////////////////
+		//vija 2 paraqet kendin poshte
+		c.beginPath();
+		c.moveTo(317-350,288-350);
+		c.lineTo(217-350,270-350);
+		c.stroke();
+
+		c.beginPath();
+		c.moveTo(315-350,287-350);
+		c.lineTo(342-350,198-350);
+		c.stroke();
+		//////////////////////////////////////
+
+		c.rotate(60*Math.PI/180);
+		/////////////////////////////////////// 
+		//vija 1 paraqe kendin larte
+		c.beginPath();
+		c.moveTo(276-350,217-350);
+		c.lineTo(176-350,199-350);
+		c.stroke();
+
+		c.beginPath();
+		c.moveTo(274-350,217-350);
+		c.lineTo(301-350,128-350);
+		c.stroke();	
+		///////////////////////////////////////
+		//vija 2 paraqet kendin poshte
+		c.beginPath();
+		c.moveTo(317-350,288-350);
+		c.lineTo(217-350,270-350);
+		c.stroke();
+
+		c.beginPath();
+		c.moveTo(315-350,287-350);
+		c.lineTo(342-350,198-350);
+		c.stroke();
+		//////////////////////////////////////
+
+		c.rotate(60*Math.PI/180);
+		/////////////////////////////////////// 
+		//vija 1 paraqe kendin larte
+		c.beginPath();
+		c.moveTo(276-350,217-350);
+		c.lineTo(176-350,199-350);
+		c.stroke();
+
+		c.beginPath();
+		c.moveTo(274-350,217-350);
+		c.lineTo(301-350,128-350);
+		c.stroke();	
+		///////////////////////////////////////
+		//vija 2 paraqet kendin poshte
+		c.beginPath();
+		c.moveTo(317-350,288-350);
+		c.lineTo(217-350,270-350);
+		c.stroke();
+
+		c.beginPath();
+		c.moveTo(315-350,287-350);
+		c.lineTo(342-350,198-350);
+		c.stroke();
+		//////////////////////////////////////
+
+
+
+
+
+
+
+
+
+	window.addEventListener("click", function(event){
+
+		console.log(event);
+	});
+
+
+	</script>
+
+</body>
+</html>

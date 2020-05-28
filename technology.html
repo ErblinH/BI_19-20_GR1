@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Technology</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="politics.css" />
+
+    <script src="data.js"></script>
+    <script src="functions.js"></script>
+    <script src="technology.js"></script>
+
+</head>
+
+<body>
+
+
+    <header>
+        <nav id="mainMenu">
+            <ul>
+                <li><a href="signUp.html" target="_blank">Sign Up</a></li>
+                <li><a href="logIn.html" target="_blank">Login</a></li>
+
+                <li><a href="articles.html" target="_blank">Archived News</a></li>
+            </ul>
+            <div class="logos">
+                <a href="https://www.linkedin.com/"><img src="images/in.png" width="20px" height="20px" /></a>
+                <a href="https://twitter.com/"><img src="images/twitter.png" width="20px" height="20px" /></a>
+                <a href="https://www.pinterest.com/"><img src="images/pinteres.png" width="20px" height="20px" /></a>
+                <a href="https://aboutme.google.com/"><img src="images/g+.png" width="20px" height="20px" /></a>
+                <a href="http://rss.org/"><img src="images/wifi.png" width="20px" height="20px" /></a>
+            </div>
+
+        </nav>
+        <div class="middle">
+            <div class="search">
+                <input id="submitButton" type="submit" value="SUBMIT" />
+                <input id="searchInput" name="search" type="text" placeholder="Search Our Website" />
+
+            </div>
+            <div id="title">
+                <h1>EUONYMUS</h1>
+                <p>Free PSD<br> Website Template</p>
+            </div>
+
+        </div>
+        <nav id="secondaryMenu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="sports.html">SPORTS</a></li>
+                <li><a href="health.html">HEALTH</a></li>
+                <li><a href="technology.html">TECHNOLOGY</a></li>
+                <li><a href="aboutUs.html">ABOUT US</a></li>
+                <li><a href="contactUs.html">CONTACT US</a></li>
+
+
+            </ul>
+        </nav>
+    </header>
+
+    <article>
+        <article>
+            <section id="bigArticle">
+                <div id="bigArticleUpperPart"></div>
+
+                <div id="bigArticleTextContent"></div>
+            </section>
+            <section id="searchArticles">
+                <table>
+                    <tbody id="tablebody1">
+
+                    </tbody>
+                </table>
+            </section>
+            <section id="smallArticles">
+                <table>
+                    <tbody id="tablebody">
+
+
+                    </tbody>
+                </table>
+            </section>
+
+        </article>
+        <footer>
+
+            <div align="center" id="topArrow">
+                <a href="#mainMenu"><img src="images/uparrow.png" width="40px" /></a>
+            </div>
+
+            <div class="upDownFooter">
+
+                <div class="companyDetails">
+                    <h4>COMPANY DETAILS</h4>
+                    <p>
+                        TOP NEWS is a public newsbr <br> channel in Kosovo. It is owned <br>by Television of Kosovo <br>(RTK; Albanian: Radio Televizioni i Kosovës) <br>from the year 2012. It main <br>purpose it to serve to its loyal readers the most
+                        recent and unbiased news regarding <br>politics, economics, education,<br> sports, showbiz and so on.
+                    </p>
+                </div>
+
+                <div class="blogPosts">
+                    <h4>LATEST BLOG POSTS</h4>
+                    <ul>
+                        <li>
+                            <a href="health.html"><img src="images/vegans.jpg" width="50px" />
+                                <p>Vegans 'need to be aware of B12 deficiency risk'</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="technology.html"><img src="images/facial.jpg" width="50px" />
+                                <p>Facial recognition fails on race, government study says</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="health.html"><img src="images/old.jpg" width="50px" />
+                                <p>The Older You Are, the Less Narcissistic You Tend to Be</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="quickLinks">
+                    <h4>QUICK LINKS</h4>
+                    <ul>
+                        <li><a href="sports.html">Liverpool hopeful over Van Dijk return for Club World Cup final</a></li>
+                        <li><a href="health.html">Vegans 'need to be aware of B12 deficiency risk'</a></li>
+                        <li><a href="technology.html">Uber promises changes to avoid Germany ban</a></li>
+                        <li><a href="sports.html">Brazilian Mikaili Sol wins Kiteboarding World Championships</a></li>
+                        <li><a href="technology.html">YouTube's top earners: Eight-year-old Ryan tops list with $26m</a></li>
+                    </ul>
+                </div>
+
+                <div class="contact">
+                    <h4>CONTACT US</h4>
+                    <input type="text" placeholder="Name" /><br>
+                    <input type="email" placeholder="Email" cols="21" /><br>
+                    <textarea rows="5" cols="18"> Message</textarea><br>
+                    <input type="submit" value="SUBMIT" />
+                </div>
+            </div>
+
+            <p id="copyright">Copyright &copy; 2013 Domain Name-Al Rights Reserved </p>
+            <p id="template">Template by OS Templates</p>
+        </footer>
+        <!------------------------------------------------------------------------>
+
+        <script src="data.js" type="text/JavaScript"></script>
+
+        <script src="functions.js" type="text/JavaScript"></script>
+
+        <div id="geolocation">
+            <script src="index.js" type="text/JavaScript"></script>
+        </div>
+
+        <script type="text/javascript" src="main.js"></script>
+        <script>
+            document.getElementById("submitButton").addEventListener("click", searchInput);
+            for (var k = 0; k < 6; k++) {
+                article2(techImages[k], techHeaders[k], techHeaders2[k], k, 3, 0);
+            }
+        </script>
+        <script>
+            document.getElementById("submitButton").addEventListener("click", searchInput)
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.open("GET", "functions.php", true);
+            xmlhttp.send();
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+
+                    var data = JSON.parse(this.responseText);
+                    console.log(data);
+                    //  console.log(typeOf(data[3].Images));
+                    for (var k = 1; k < data.length; k++) {
+                        if (data[k].Type.toString().equals("Technology")) {
+                            article2(data[k].Image.toString(), data[k].Header1, data[k].Header2, k, 1, 0);
+                        }
+                    }
+                }
+            }
+        </script>
+</body>
+
+</html>

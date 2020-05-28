@@ -1,0 +1,38 @@
+html{
+    background-image: linear-gradient(to bottom right, rgba(129, 150, 156, 0), rgba(97, 90, 99, 0.137));
+}
+
+table{
+    width: 100%;
+}
+
+
+#secondaryMenu
+{   background-image: url("images/butterfly.png"),url("images/articlebackground.jpg");
+    background-attachment: scroll;
+    background-position:left top,right bottom;
+    
+    background-repeat: repeat;
+    background-size: auto;
+    background-origin:content-box;
+}
+#topArrow
+{   
+    background: url("images/articlebackground.jpg") repeat border-box;   
+    
+    
+}
+#bigArticleTextContent{
+    text-align: justify;
+}
+footer div.upDownFooter ul li
+{
+    list-style: disc;
+}
+footer div.contact
+    {
+        border-style: dotted;
+        border-width: 1px;
+        border-color:aquamarine;
+        outline: rgb(64, 100, 91) double 3px;
+    }

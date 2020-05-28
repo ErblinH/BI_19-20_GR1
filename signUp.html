@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>LogIn</title>
+</head>
+<body>
+    <div style="border:1px solid black ;width:200px;margin:auto" align="center">
+        <form action="#" method="get" id="mainForm">
+        <p>
+        <label>Name</label><br/>
+        <input type="text" name="name" id="name"  placeholder="Firstname" required autofocus> 
+        </p>
+        <p>
+            <label>Lastname</label><br/>
+            <input type="text" name="lastname" id="lastname"  placeholder="Lastname" required autofocus> 
+            </p>
+
+        
+        <p>
+        <label>Email</label><br/>
+        <input type="text" name="mail" id="mail" placeholder="ex@example.com" required>
+        </p>      
+        <p>
+            <label>Password:</label><br>
+            <input type="password" name="password" id="pass1" required>
+        </p> 
+        <p>
+            <label>Password:</label><br>
+            <input type="password" name="password" id="pass2" required>
+        </p>   
+        <p>
+            
+                <input type="submit" value="Log In">
+            
+        </p>  
+    </form>    
+    </div>       
+    <script>
+          var password = document.getElementById("pass1")
+            var confirm_password = document.getElementById("pass2");
+
+function validatePassword(){
+  if(password.value != confirm_password.value) {
+    confirm_password.setCustomValidity("Passwords Don't Match");
+   return false;
+  } else {
+    confirm_password.setCustomValidity('');
+    return true;
+  }
+}
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
+
+window.addEventListener("load", function(){
+    
+
+    //kur te bejme submit formen, "empty" checks kerkohet te plotesohen ne input fushat qe jane required
+    var mainForm = document.getElementById("mainForm");
+    mainForm.addEventListener("submit", function(e){
+    
+    var requiredInputs = document.querySelectorAll(".required");
+    for (var i =0; i<requiredInputs.length; i++)
+    {
+        if(isBlank(requiredInputs[i]))
+        {
+            e.preventDefault();
+            requiredInputs[i].classList.add("error");
+        }
+        else
+        {
+            makeClean(requiredInputs[i]);
+        }
+    }
+
+      if(validatePassword()){
+          e.preventDefault();
+          validatePassword();
+      }
+ 
+    });
+})
+    </script>
+</body>
+</html>
